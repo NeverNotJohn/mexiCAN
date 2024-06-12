@@ -1,0 +1,223 @@
+body {
+    height: 4500px;
+    font-style: 'sf';
+}
+
+p {
+    font-size: 1.8vh;
+}
+
+@font-face {
+    font-family: 'sf';
+    src: url('static/fonts/SF-Pro-Display-Light.otf');
+}
+
+/* Classes */
+
+.fw {
+    width: 100vw;
+}
+
+.fh {
+    height: 100vh;
+}
+
+.top {
+    position: absolute;
+    top: 0px;
+}
+
+.phone {
+    display: block;
+    position: absolute;
+    width: 13.5vw;
+    font-family: 'sf';
+    font-size: 1vw;
+}
+
+.wid {
+    max-width: 15.5vw;
+}
+
+.wif {
+    width: 15vw;
+}
+
+.hcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble-button {
+    padding: 5px 10px;
+    border-radius: 50px;
+    background-color: #FFFFFF; /* Bootstrap primary color */
+    color: #000; /* Text color */
+    transition: transform 0.05s ease-in-out;
+    max-width: 15vw;
+    max-height: 5vh;
+    z-index: 2;
+}
+
+button {
+    z-index: 2;
+}
+
+button:active {
+    transform: scale(0.75); /* Adjust scale factor as needed */
+    background-color: #fbc9eb; /* Choose a different color */
+}  
+
+.pog {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-family: 'sf';
+    text-align: center;
+    font-style: bold;
+    z-index: 2;
+}
+
+.mt-10 {
+    margin-top: 10vh;
+}
+
+.mt-15 {
+    margin-top: 15vh;
+}
+
+.mt-30 {
+    margin-top: 30vh;
+}
+
+.newLine {
+    display: block;
+}
+
+#M {
+    font-size: 300px;
+}
+
+#final {
+    height: 100vh;
+    background-color: #f5b5b8;
+    align-items: center;
+    text-align: center;
+    font-size: 100px;
+}
+
+.big {
+    font-size: 100px;
+}
+
+.discord {
+    padding: 8px;
+    color: white;
+    z-index: 999999;
+    background-color: #222222;
+    width: 18vw;
+    border-radius: 10px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.8);
+    right: -4000vh;
+    bottom: 4vh;
+    border: 2px solid #3c3c3c;
+    overflow: hidden;
+    padding-bottom: 3px;
+}
+
+.d_img {
+    width: 5vh;
+    height: 5vh;
+    margin-right: 1vh;
+}
+
+.d_p {
+    width: 14vw;
+    height: 100%;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+div img {
+    width: 100%;
+}
+
+div button {
+    margin-bottom: 1vh;
+}
+
+/* IDs */
+
+#hmm {
+    z-index: 1;
+}
+
+#cat {
+    left: 23.3vw;
+    top: 40vh;
+    color: black;
+}
+
+#jo {
+    left: 60.7vw;
+    top: 40vh;
+    color: white;
+}
+
+#top {
+    z-index: 99;
+    height: 21.5vh;
+}
+
+#bot {
+    z-index: 99;
+    width: 100vw;
+    height: 12.5vh;
+    overflow: hidden;
+}
+
+#killMe {
+    width: 100%;
+    object-fit: cover;
+}
+
+#ge {
+    width: 30vw;
+}
+
+
+#text {
+    height: 37vh;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+
+.centered-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#dance {
+    width: 50px;
+}
+
+#front {
+    background-color: #f5b5b8;
+    height: 1000vh;
+}
+
+.smol {
+    width: 10vw;
+}
