@@ -12,6 +12,7 @@ let plant_2_c = document.getElementById('plant-2-c');
 let hoe = new Audio('static/audio/hoe.ogg');
 let seed = new Audio('static/audio/seed.ogg');
 let moan = new Audio('static/audio/moan.mp3');
+let twinkle = new Audio('static/audio/twinkle.mp3');
 
 // Variables
 
@@ -58,15 +59,19 @@ async function bonk() {
             break;
 
         case 7:
-
+            plant_1_a.src = 'static/images/wheet.png';
+            plant_2_a.src = 'static/images/wheet.png';
             break;
 
         case 8:
-                
+            plant_1_b.src = 'static/images/wheet.png';
+            plant_2_b.src = 'static/images/wheet.png';
             break;
 
         case 9:
-
+            plant_1_c.src = 'static/images/wheet.png';
+            plant_2_c.src = 'static/images/wheet.png';
+            twinkle.play();
             break;
 
         default:
@@ -74,3 +79,35 @@ async function bonk() {
     }
 
 }
+
+function applyRainbowEffect(elementId) {
+    var rainbowText = document.getElementById(elementId);
+
+    if (rainbowText) {
+        var text = rainbowText.innerText;
+        var colors = ['#ff0000', '#ff9900', '#ffff00', '#33cc33', '#3399ff', '#9933ff', '#ff33cc'];
+        var interval = 500; // Change color every 500 milliseconds
+        var index = 0;
+
+        function updateColors() {
+            var spannedText = '';
+
+            for (var i = 0; i < text.length; i++) {
+                var char = text.charAt(i);
+                var color = colors[(i + index) % colors.length];
+                spannedText += '<span style="color: ' + color + ';">' + char + '</span>';
+            }
+
+            rainbowText.innerHTML = spannedText;
+            index = (index + 1) % colors.length;
+        }
+
+        // Initial call and setup the interval
+        updateColors();
+        setInterval(updateColors, interval);
+    }
+}
+
+// main
+
+applyRainbowEffect('header');
