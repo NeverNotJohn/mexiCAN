@@ -9,8 +9,8 @@ let plant_2_c = document.getElementById('plant-2-c');
 
 // audio
 
-let hoe = new Audio('static/audio/hoe.ogg');
-let seed = new Audio('static/audio/seed.ogg');
+let hoe = new Audio('static/audio/hoe.mp3');
+let seed = new Audio('static/audio/seed.mp3');
 let moan = new Audio('static/audio/moan.mp3');
 let twinkle = new Audio('static/audio/twinkle.mp3');
 
