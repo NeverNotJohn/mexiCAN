@@ -43,3 +43,12 @@ body {
     text-align: right;
     float: right;
 }
+
+#alejandro {
+    width: 100%;
+    height: auto;
+}
+
+.text-big {
+    font-size: 7vh;
+}
