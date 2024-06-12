@@ -7,12 +7,16 @@ let plant_2_a = document.getElementById('plant-2-a');
 let plant_2_b = document.getElementById('plant-2-b');
 let plant_2_c = document.getElementById('plant-2-c');
 
+// other
+let alejandro = document.getElementById('alejandro');
+
 // audio
 
 let hoe = new Audio('static/audio/hoe.mp3');
 let seed = new Audio('static/audio/seed.mp3');
 let moan = new Audio('static/audio/moan.mp3');
 let twinkle = new Audio('static/audio/twinkle.mp3');
+let mexican = new Audio('static/audio/mexico.mp3');
 
 // Variables
 
@@ -26,6 +30,7 @@ async function bonk() {
             plant_1_a.classList.remove('hidden');
             plant_2_a.classList.remove('hidden');
             hoe.play();
+            mexican.play();
             break;
 
         case 2:
@@ -108,6 +113,22 @@ function applyRainbowEffect(elementId) {
     }
 }
 
+function farmerAnimation() {
+    let frame = 0;
+
+    function animate() {
+        frame = !frame;
+        if (frame) {
+            alejandro.src = 'static/images/farmer.png';
+        } else {
+            alejandro.src = 'static/images/farmer2.png';
+        }
+    }
+    animate();
+    setInterval(animate, 500);
+}
+
 // main
 
 applyRainbowEffect('header');
+farmerAnimation();
