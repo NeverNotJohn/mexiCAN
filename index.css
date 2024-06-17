@@ -109,3 +109,7 @@ body {
 .gloog {
     animation: glug 2.5s;
 }
+
+.small {
+    font-size: 50px;
+}

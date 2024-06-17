@@ -96,6 +96,8 @@ async function bonk() {
         break;
 
         case 10:
+            header.textContent = 'Click to make Alejandrito happy!';
+            header.classList.add('small');
             frame1 = maker1;
             frame2 = maker2;
             table.classList.add('hidden');
@@ -137,6 +139,8 @@ async function bonk() {
         break;
 
         case 15:
+            header.textContent = 'Click to make HP drink!';
+            header.classList.remove('small');
             barrel.src = 'static/images/soju.webp';
             kids.play();
         break;
@@ -168,6 +172,7 @@ function applyRainbowEffect(elementId) {
         var index = 0;
 
         function updateColors() {
+            var text = rainbowText.innerText;
             var spannedText = '';
 
             for (var i = 0; i < text.length; i++) {
