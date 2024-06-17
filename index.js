@@ -8,9 +8,11 @@ let plant_2_b = document.getElementById('plant-2-b');
 let plant_2_c = document.getElementById('plant-2-c');
 
 // other
+
 let alejandro = document.getElementById('alejandro');
 let table = document.getElementById('table');
 let barrel = document.getElementById('barrel');
+let header = document.getElementById('header');
 
 // audio
 
@@ -22,6 +24,12 @@ let mexican = new Audio('static/audio/mexico.mp3');
 let plop = new Audio('static/audio/plop.mp3');
 let kids = new Audio('static/audio/kids.mp3');
 
+// Alejandro Frames
+
+let frame1 = 'static/images/farmer.png';
+let frame2 = 'static/images/farmer2.png';
+let maker1 = 'static/images/maker1.png';
+let maker2 = 'static/images/maker2.png';
 
 // Variables
 
@@ -85,7 +93,8 @@ async function bonk() {
         break;
 
         case 10:
-
+            frame1 = maker1;
+            frame2 = maker2;
             table.classList.add('hidden');
             barrel.classList.remove('hidden');
         break;
@@ -129,6 +138,10 @@ async function bonk() {
             kids.play();
         break;
 
+        case 16:
+            frame1 = 'static/images/barrel.jpg';
+        break;
+
         default:
             break;
     }
@@ -169,9 +182,9 @@ function farmerAnimation() {
     function animate() {
         frame = !frame;
         if (frame) {
-            alejandro.src = 'static/images/farmer.png';
+            alejandro.src = frame1;
         } else {
-            alejandro.src = 'static/images/farmer2.png';
+            alejandro.src = frame2;
         }
     }
     animate();
