@@ -23,6 +23,7 @@ let twinkle = new Audio('static/audio/twinkle.mp3');
 let mexican = new Audio('static/audio/mexico.mp3');
 let plop = new Audio('static/audio/plop.mp3');
 let kids = new Audio('static/audio/kids.mp3');
+let glug = new Audio('static/audio/glug.mp3');
 
 // Alejandro Frames
 
@@ -30,6 +31,8 @@ let frame1 = 'static/images/farmer.png';
 let frame2 = 'static/images/farmer2.png';
 let maker1 = 'static/images/maker1.png';
 let maker2 = 'static/images/maker2.png';
+let alcoholic1 = 'static/images/alcoholic1.png';
+let alcoholic2 = 'static/images/alcoholic2.png';
 
 // Variables
 
@@ -139,7 +142,14 @@ async function bonk() {
         break;
 
         case 16:
-            frame1 = 'static/images/barrel.jpg';
+            frame1 = 'static/images/drinker1.png';
+            frame2 = 'static/images/drinker2.png';
+            glug.play();
+            barrel.classList.add('gloog');
+            barrel.addEventListener('animationend', () => {
+                barrel.classList.remove('animate-on-click');
+            });
+            plop.play();
         break;
 
         default:
