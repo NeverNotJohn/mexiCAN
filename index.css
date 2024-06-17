@@ -56,3 +56,17 @@ body {
 .hidden {
     opacity: 0;
 }
+
+#barrel {
+    width: 50%;
+    height: auto;
+}
+
+.center {
+    text-align: center;
+    display: block;
+}
+
+.center img {
+    margin-top: 35%;
+}

@@ -79,6 +79,10 @@ async function bonk() {
             twinkle.play();
             break;
 
+        case 10:
+            
+            break;
+
         default:
             break;
     }
