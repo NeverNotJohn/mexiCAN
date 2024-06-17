@@ -9,6 +9,8 @@ let plant_2_c = document.getElementById('plant-2-c');
 
 // other
 let alejandro = document.getElementById('alejandro');
+let table = document.getElementById('table');
+let barrel = document.getElementById('barrel');
 
 // audio
 
@@ -17,6 +19,8 @@ let seed = new Audio('static/audio/seed.mp3');
 let moan = new Audio('static/audio/moan.mp3');
 let twinkle = new Audio('static/audio/twinkle.mp3');
 let mexican = new Audio('static/audio/mexico.mp3');
+let plop = new Audio('static/audio/plop.mp3');
+
 
 // Variables
 
@@ -80,7 +84,42 @@ async function bonk() {
             break;
 
         case 10:
-            
+            table.classList.add('hidden');
+            barrel.classList.remove('hidden');
+            break;
+
+        case 11:
+            barrel.classList.add('animate-on-click');
+            barrel.addEventListener('animationend', () => {
+                barrel.classList.remove('animate-on-click');
+            });
+            plop.play();
+            break;
+
+        case 12:
+            barrel.classList.add('animate-on-click');
+            barrel.addEventListener('animationend', () => {
+                barrel.classList.remove('animate-on-click');
+            });
+            plop.play();
+            break;
+
+        case 13:
+            barrel.classList.add('animate-on-click');
+            barrel.addEventListener('animationend', () => {
+                barrel.classList.remove('animate-on-click');
+            });
+            plop.play();
+            break;
+
+        case 14:
+
+            barrel.classList.add('spin');
+            twinkle.play();
+            barrel.addEventListener('animationend', () => {
+                barrel.classList.remove('spin');
+            });
+
             break;
 
         default:
