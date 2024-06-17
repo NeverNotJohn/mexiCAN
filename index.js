@@ -20,6 +20,7 @@ let moan = new Audio('static/audio/moan.mp3');
 let twinkle = new Audio('static/audio/twinkle.mp3');
 let mexican = new Audio('static/audio/mexico.mp3');
 let plop = new Audio('static/audio/plop.mp3');
+let kids = new Audio('static/audio/kids.mp3');
 
 
 // Variables
@@ -35,58 +36,59 @@ async function bonk() {
             plant_2_a.classList.remove('hidden');
             hoe.play();
             mexican.play();
-            break;
+        break;
 
         case 2:
             plant_1_b.classList.remove('hidden');
             plant_2_b.classList.remove('hidden');
             hoe.play();
-            break;
+        break;
 
         case 3:
             plant_1_c.classList.remove('hidden');
             plant_2_c.classList.remove('hidden');
             hoe.play();
-            break;
+        break;
 
         case 4:
             plant_1_a.src = 'static/images/seed.png';
             plant_2_a.src = 'static/images/seed.png';
             seed.play();
-            break;
+        break;
     
         case 5:
             plant_1_b.src = 'static/images/seed.png';
             plant_2_b.src = 'static/images/seed.png';
             seed.play();
-            break;
+        break;
 
         case 6:
             plant_1_c.src = 'static/images/seed.png';
             plant_2_c.src = 'static/images/seed.png';
             moan.play();
-            break;
+        break;
 
         case 7:
             plant_1_a.src = 'static/images/wheet.png';
             plant_2_a.src = 'static/images/wheet.png';
-            break;
+        break;
 
         case 8:
             plant_1_b.src = 'static/images/wheet.png';
             plant_2_b.src = 'static/images/wheet.png';
-            break;
+        break;
 
         case 9:
             plant_1_c.src = 'static/images/wheet.png';
             plant_2_c.src = 'static/images/wheet.png';
             twinkle.play();
-            break;
+        break;
 
         case 10:
+
             table.classList.add('hidden');
             barrel.classList.remove('hidden');
-            break;
+        break;
 
         case 11:
             barrel.classList.add('animate-on-click');
@@ -94,7 +96,7 @@ async function bonk() {
                 barrel.classList.remove('animate-on-click');
             });
             plop.play();
-            break;
+        break;
 
         case 12:
             barrel.classList.add('animate-on-click');
@@ -102,7 +104,7 @@ async function bonk() {
                 barrel.classList.remove('animate-on-click');
             });
             plop.play();
-            break;
+        break;
 
         case 13:
             barrel.classList.add('animate-on-click');
@@ -110,7 +112,7 @@ async function bonk() {
                 barrel.classList.remove('animate-on-click');
             });
             plop.play();
-            break;
+        break;
 
         case 14:
 
@@ -120,7 +122,12 @@ async function bonk() {
                 barrel.classList.remove('spin');
             });
 
-            break;
+        break;
+
+        case 15:
+            barrel.src = 'static/images/soju.webp';
+            kids.play();
+        break;
 
         default:
             break;
