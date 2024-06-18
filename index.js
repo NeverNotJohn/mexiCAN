@@ -177,6 +177,7 @@ async function bonk() {
         case 20:
             punch.play();
             barrel.src = 'static/images/wtf_did_I_create.png';
+            barrel.style.width = '85%';
         break;
 
         // End Credits
