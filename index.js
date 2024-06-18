@@ -24,6 +24,9 @@ let mexican = new Audio('static/audio/mexico.mp3');
 let plop = new Audio('static/audio/plop.mp3');
 let kids = new Audio('static/audio/kids.mp3');
 let glug = new Audio('static/audio/glug.mp3');
+let burp = new Audio('static/audio/burp.mp3');
+let punch = new Audio('static/audio/punch.mp3');
+let bell = new Audio('static/audio/bell.mp3');
 
 // Alejandro Frames
 
@@ -154,6 +157,33 @@ async function bonk() {
                 barrel.classList.remove('animate-on-click');
             });
             plop.play();
+        break;
+
+        case 17:
+            burp.play();
+            header.textContent = 'Click to beat!';
+        break;
+
+        case 18:
+            punch.play();
+            frame1 = 'static/images/bonk1.png';
+            frame2 = 'static/images/bonk2.png';
+        break;  
+
+        case 19:
+            punch.play();
+        break;
+
+        case 20:
+            punch.play();
+            barrel.src = 'static/images/wtf_did_I_create.png';
+        break;
+
+        // End Credits
+
+        // Congratulations!!! You unlocked an ultra rare tomagatchi
+        case 21:
+            bell.play();
         break;
 
         default:
