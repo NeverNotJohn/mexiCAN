@@ -183,8 +183,14 @@ async function bonk() {
         // End Credits
 
         // Congratulations!!! You unlocked an ultra rare tomagatchi
+        // Happy bday Miho <3
         case 21:
+            header.textContent = 'Congratulations!!! You unlocked an ultra rare Digimon!';
             bell.play();
+            frame1 = 'static/images/toma.png';
+            frame2 = 'static/images/toma.png';
+            barrel.style.display = 'none';
+            
         break;
 
         default:
